@@ -6,8 +6,8 @@ with st.expander("ℹ️ Disclaimer"):
     st.caption(
         "We appreciate your engagement! Please note, this demo is designed to process a maximum of 10 interactions. Thank you for your understanding."
     )
-
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = "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"
+openai.api_key = "OPENAI_API_KEY"
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
